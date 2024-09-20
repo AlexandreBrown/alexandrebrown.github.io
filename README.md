@@ -5,20 +5,21 @@
 
 ---
 
-With over six years of professional experience in computer science and machine learning, various projects I worked on include but are not limited to :  
-- Image Object Detection of Eucalyptus Crops using Deep Learning
-- 3D Point Cloud Semantic Segmentation from LiDAR Data    
+With over six years of professional experience in computer science and machine learning, I have worked on various projects, including:
 
-Feel free to check [my LinkedIn](https://www.linkedin.com/in/alexandrebrown/) to learn more or to connect with me.
+- **Image Object Detection of Eucalyptus Crops using Deep Learning**
+- **3D Point Cloud Semantic Segmentation from LiDAR Data**
 
-Some open source projects I published include but are not limited to :   
+Feel free to check out my [LinkedIn profile](https://www.linkedin.com/in/alexandrebrown/) to learn more or connect with me.
+
+Some open-source projects I have published include:
+
 - [Canada Wildfire Prediction using Deep Learning](https://github.com/AlexandreBrown/WildfirePrediction)
 - [Image Cloud Semantic Segmentation using Deep Learning](https://github.com/GIF-7005-Projet/cloud-cover-detection)
 - [Aerial Semantic Segmentation using Deep Learning](https://github.com/AlexandreBrown/AerialSemanticSegmentation)
 - [Experiment on Adapting TDM Models to Images for Visual Deep Reinforcement Learning](https://github.com/AlexandreBrown/VisualTDM)  
 
-I am currently conducting research at [MILA](https://mila.quebec/) (Montreal Quebec AI Institute).  
-My research interests include:
+I am currently conducting research at [MILA](https://mila.quebec/) (Montreal Quebec AI Institute). My research interests include:
 
 - **Deep Visual Reinforcement Learning**: Leveraging images as input to deep RL policies.
 - **Goal-Conditioned Reinforcement Learning**: Focusing on multi-modality with image and text goals.
