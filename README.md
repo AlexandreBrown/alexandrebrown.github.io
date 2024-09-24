@@ -7,6 +7,7 @@
 
 With over six years of professional experience in computer science and machine learning, I have worked on various projects, including:
 
+- **Canada Wildfire Prediction using Machine Learning**
 - **Image Object Detection of Eucalyptus Crops using Deep Learning**
 - **3D Point Cloud Semantic Segmentation from LiDAR Data**
 
