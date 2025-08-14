@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alexandre Brown — PhD Student at UdeM / Mila</title>
+  <meta name="description" content="PhD student at Université de Montréal and Mila working on AGI-oriented generalist robotics, visual generalization in online visual reinforcement learning, and reinforcement learning." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>Alexandre Brown</span>
+      </div>
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <img class="pfp" src="alexbrown.jpeg" alt="Portrait of Alexandre Brown" />
+      <div class="hero-card">
+        <div class="kicker">Université de Montréal / Mila</div>
+        <h1>PhD Student</h1>
+        <p class="tagline">
+          I focus on building robot policies that move us closer to artificial general intelligence.  
+          My work emphasizes visual generalization in online visual reinforcement learning.  
+          I am supervised by <a href="https://neo-x.github.io/" target="_blank" rel="noopener">Glen Berseth</a>.
+        </p>
+        <div class="chips">
+          <span class="chip">Artificial General Intelligence</span>
+          <span class="chip">Generalist Robotics</span>
+          <span class="chip">Visual Generalization</span>
+          <span class="chip">Online Visual RL</span>
+          <span class="chip">Transformers</span>
+          <span class="chip">Segmentation-based RL</span>
+        </div>
+        <div class="cta">
+          <a href="CV.pdf" class="btn primary">Download CV</a>
+          <a href="https://github.com/AlexandreBrown" class="btn">GitHub</a>
+          <a href="https://www.linkedin.com/in/alexandrebrown/" class="btn">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="section-title">
+        <h2>Research Interests</h2>
+      </div>
+      <p>
+        My research combines reinforcement learning, robotics and computer vision.  </br>
+        I aim to create learning systems that can operate in varied environments with minimal task-specific tuning.</br>  
+        Key areas include:
+      </p>
+      <ul>
+        <li>Artificial general intelligence and generalist robot policies</li>
+        <li>Visual generalization in online visual reinforcement learning</li>
+        <li>Using large pretrained vision models in RL pipelines</li>
+        <li>Efficient methods for real-world deployment</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <div class="section-title">
+        <h2>Publications</h2>
+      </div>
+      <div class="paper">
+        <h3>SegDAC: Segmentation-Driven Actor-Critic for Visual Generalization in Online RL</h3>
+        <div class="meta">A. Brown, G. Berseth — 2025</div>
+        <p>
+          SegDAC integrates large vision models with online visual reinforcement learning to produce object-centric scene representations.
+            It improves visual generalization by up to twice compared to previous state-of-the-art online visual RL methods, without relying on human labels, data augmentation, or frame stacking.
+        </p>
+        <div class="badges">
+          <a class="badge" href="https://arxiv.org/abs/2508.09325" target="_blank">arXiv</a>
+          <a class="badge" href="https://github.com/SegDAC/SegDAC" target="_blank">Code</a>
+          <a class="badge" href="static/videos/segdac.mp4" target="_blank">Video</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+  <div class="section-title">
+    <h2>Selected Projects</h2>
+  </div>
+  <div class="grid">
+
+    <!-- Wildfire Prediction -->
+    <div class="col-6 card">
+      <img src="images/wildfire_project.png" alt="Wildfire Prediction" style="width:100%; border-radius:8px; margin-bottom:10px;">
+      <h3>Canada Wildfire Prediction using Deep Learning</h3>
+      <p>
+        End-to-end system for large-scale wildfire forecasting across Canada at 250 m resolution.  
+        Handles the full pipeline from multi-source geospatial data collection and cleaning to model training and evaluation.  
+        Achieves strong test set performance, making it a practical tool for predicting future wildfire risk.
+      </p>
+      <div class="badges">
+        <a class="badge" href="https://github.com/AlexandreBrown/WildfirePrediction" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
+    <!-- Aerial Semantic Segmentation -->
+    <div class="col-6 card">
+      <img src="images/aerial_semantic_seg_project.png" alt="Aerial Semantic Segmentation" style="width:100%; border-radius:8px; margin-bottom:10px;">
+      <h3>Aerial Semantic Segmentation</h3>
+      <p>
+        End-to-end deep learning pipeline for high-resolution segmentation of aerial imagery.  
+        Processes large-scale geospatial datasets, optimizes models for small-object detection, and delivers robust performance across diverse environments.  
+        Useful for mapping, infrastructure monitoring, and environmental analysis.
+      </p>
+      <div class="badges">
+        <a class="badge" href="https://github.com/AlexandreBrown/AerialSemanticSegmentation" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
+    <!-- Cloud Cover Detection -->
+    <div class="col-6 card">
+      <img src="images/cloud_cover_result.png" alt="Cloud Cover Detection" style="width:100%; border-radius:8px; margin-bottom:10px;">
+      <h3>Cloud Cover Segmentation</h3>
+      <p>
+        Developed deep learning models for accurate detection of clouds and cloud shadows in satellite imagery.  
+        Includes full data preprocessing and model training pipeline to handle diverse atmospheric conditions.  
+        Enhances the quality of remote sensing datasets by removing noise, improving analysis for environmental and mapping applications.
+      </p>
+      <div class="badges">
+        <a class="badge" href="https://github.com/GIF-7005-Projet/cloud-cover-detection" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
+</div>
+</section>
+
+    <section id="experience">
+      <div class="section-title">
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>Mila Quebec AI Institute</strong><br />
+          <span class="muted">PhD Student, Artificial Intelligence • 2025 to present</span>
+        </div>
+        <div class="timeline-item">
+          <strong>University of Montreal</strong><br />
+          <span class="muted">MSc in Artificial Intelligence • 2023 to 2025</span>
+        </div>
+        <div class="timeline-item">
+          <strong>Industry Machine Learning Roles</strong><br />
+          <span class="muted">2021 to 2023</span>
+        </div>
+        <div class="timeline-item">
+          <strong>Industry Software Engineer Roles</strong><br />
+          <span class="muted">2018 to 2021</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+      <p>Email: <a href="mailto:alexandre.brown@mila.quebec">alexandre.brown@mila.quebec</a></p>
+    </section>
+  </main>
+</body>
+</html>
