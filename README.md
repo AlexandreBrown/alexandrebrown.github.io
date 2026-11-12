@@ -46,6 +46,8 @@ Hardware photographs are personal lab photos. They do not document SegDAC hardwa
 
 ## Project media
 
+G1 Zero-Shot is the first project. Its real-world demo, `assets/videos/g1-zero-shot-real-frames.mp4`, emphasizes the third-person recording with a small robot POV alongside it. POV capture timestamps from the run logs restore its variable frame timing, with repeated stand movements used to align it to the third-person recording. The POV uses only real recorded frames, repeated as needed to preserve their capture timing. No temporal interpolation, frame blending, or motion smoothing is applied. Both views play at natural speed in a single 83.6-second video, so playback, seeking, and looping stay synchronized. The third-person view retains the corrected HDR-to-SDR conversion. Only the final combined video and its poster are included in the repository.
+
 VLM-GMT plays `reach_gt.mp4`, `kneel_gt.mp4`, and `walk_to_obj_gt.mp4` from `assets/videos/` in that order, returning to the first video after the last finishes. Playback is muted and automatic, with inline playback and player controls. The poster is linked as `assets/vlm-gmt-poster.pdf`. The EV charging example uses `assets/videos/ev_charging_rl_example.mp4` with muted autoplay, looping, inline playback, and player controls.
 
 Body text ranges from 18 px on mobile to 24 px on ultrawide screens. Content widths expand on large screens while keeping text in readable columns.
