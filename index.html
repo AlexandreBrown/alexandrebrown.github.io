@@ -1,172 +1,489 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alexandre Brown — PhD Student at UdeM / Mila</title>
-  <meta name="description" content="PhD student at Université de Montréal and Mila working on AGI-oriented generalist robotics, visual generalization in online visual reinforcement learning, and reinforcement learning." />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description"
+        content="Alexandre Brown. PhD student at Université de Montréal and researcher at Mila and the Robotics and Embodied AI Lab (REAL). Unsupervised reinforcement learning, zero-shot transfer, and humanoid loco-manipulation.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alexandre Brown | Reinforcement Learning & Robotics">
+    <meta property="og:description"
+        content="Alexandre Brown. PhD student at Université de Montréal and researcher at Mila and the Robotics and Embodied AI Lab (REAL). Unsupervised reinforcement learning, zero-shot transfer, and humanoid loco-manipulation.">
+    <title>Alexandre Brown | Reinforcement Learning & Robotics</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/p052-roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/site.js" defer></script>
 </head>
-<body>
-  <header class="nav">
-    <div class="nav-inner">
-      <div class="brand">
-        <span class="brand-dot"></span>
-        <span>Alexandre Brown</span>
-      </div>
-      <nav>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="wrap">
-    <section class="hero">
-      <img class="pfp" src="alexbrown.jpeg" alt="Portrait of Alexandre Brown" />
-      <div class="hero-card">
-        <div class="kicker">Université de Montréal / Mila</div>
-        <h1>PhD Student</h1>
-        <p class="tagline">
-          I focus on building robot policies that move us closer to artificial general intelligence.  
-          My work emphasizes visual generalization in online visual reinforcement learning.  
-          I am supervised by <a href="https://neo-x.github.io/" target="_blank" rel="noopener">Glen Berseth</a>.
-        </p>
-        <div class="chips">
-          <span class="chip">Artificial General Intelligence</span>
-          <span class="chip">Generalist Robotics</span>
-          <span class="chip">Visual Generalization</span>
-          <span class="chip">Online Visual RL</span>
-          <span class="chip">Transformers</span>
-          <span class="chip">Segmentation-based RL</span>
+<body><a class="skip-link" href="#main">Skip to content</a><svg class="icon-definitions"
+        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+            <symbol id="icon-github" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.71 2.62 1.22 3.26.93.1-.72.4-1.22.71-1.5-2.5-.28-5.12-1.25-5.12-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.08 1.15a10.7 10.7 0 0 1 5.61 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.27-5.14 5.55.4.35.76 1.04.76 2.1v3.09c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z" />
+            </symbol>
+            <symbol id="icon-x" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l7.4-8.5L.8 2h6.5l4.5 6.8L18.9 2Zm-1.1 18h1.7L6.4 3.9H4.6L17.8 20Z" />
+            </symbol>
+            <symbol id="icon-linkedin" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5ZM8 19H5V9h3v10ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-4.9c0-1.2 0-2.7-1.7-2.7s-2 1.3-2 2.6v5h-3V9h2.9v1.4c.4-.8 1.4-1.7 2.9-1.7 3.1 0 3.9 2.1 3.9 4.8V19Z" />
+            </symbol>
+            <symbol id="icon-youtube" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M23 7a3 3 0 0 0-2.1-2.1C19 4.4 12 4.4 12 4.4S5 4.4 3.1 4.9A3 3 0 0 0 1 7a31 31 0 0 0-.5 5 31 31 0 0 0 .5 5 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5A3 3 0 0 0 23 17a31 31 0 0 0 .5-5 31 31 0 0 0-.5-5ZM9.7 15.3V8.7l5.7 3.3-5.7 3.3Z" />
+            </symbol>
+            <symbol id="icon-mail" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m3 6 9 7 9-7" />
+                </g>
+            </symbol>
+            <symbol id="icon-arrow" viewBox="0 0 24 24">
+                <path d="M6 18 18 6M6 6h12v12" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+        <symbol id="icon-scholar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m2 8 10-5 10 5-10 5L2 8Z"/><path d="M6 10v7c3 3 9 3 12 0v-7M22 8v8"/></g></symbol>
+<symbol id="icon-orcid" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="6.8" cy="7.1" r="1" fill="currentColor"/><path d="M6.8 10v7M11 7h2.3a5 5 0 0 1 0 10H11V7Z" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol></defs>
+    </svg>
+    <header class="site-header">
+        <div class="header-inner container">
+            <a class="wordmark" href="index.html">Alexandre Brown</a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Overview</a>
+                <a href="publications.html">Publications</a>
+                <a href="index.html#projects">Projects</a>
+            </nav>
+            <a class="header-contact" href="mailto:alexandre.brown@mila.quebec">Get in touch <svg class="icon"
+                    aria-hidden="true">
+                    <use href="#icon-arrow"></use>
+                </svg></a>
         </div>
-        <div class="cta">
-          <a href="CV.pdf" class="btn primary">Download CV</a>
-          <a href="https://github.com/AlexandreBrown" class="btn">GitHub</a>
-          <a href="https://www.linkedin.com/in/alexandrebrown/" class="btn">LinkedIn</a>
+    </header>
+    <main id="main">
+        <section class="hero container" aria-labelledby="intro-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Reinforcement learning & robotics</p>
+                <h1 id="intro-title">Alexandre Brown</h1>
+                <p class="hero-statement">Scaling unsupervised RL<br class="desktop-break"> for humanoids.</p>
+                <p class="intro">I'm a PhD student at <a href="https://www.umontreal.ca/en/" target="_blank"
+                        rel="noopener noreferrer">Université de Montréal
+                        (UdeM)</a> and a researcher at <a href="https://mila.quebec/en" target="_blank"
+                        rel="noopener noreferrer">Mila - Quebec AI Institute</a> and the <a href="https://montrealrobotics.ca/"
+                        target="_blank" rel="noopener noreferrer">Robotics and Embodied AI Lab (REAL)</a>, advised by <a
+                        href="https://neo-x.github.io/" target="_blank" rel="noopener noreferrer">Glen Berseth</a>.</p>
+                <p class="intro">I study RL pretraining for humanoid loco-manipulation. I'm interested in general
+                    learning and search methods that scale with compute and autonomous experience, following the <a
+                        href="https://www.incompleteideas.net/IncIdeas/BitterLesson.html" target="_blank"
+                        rel="noopener noreferrer">Bitter
+                        Lesson</a>.</p>
+                <div class="social-links" aria-label="Find me online"><a href="https://scholar.google.com/citations?hl=en&amp;user=fh0H9tIAAAAJ" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-scholar"></use></svg><span>Google Scholar</span></a><a href="https://orcid.org/0009-0006-4547-0390" target="_blank" rel="me noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-orcid"></use></svg><span>ORCID</span></a><a href="mailto:alexandre.brown@mila.quebec"
+                        target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                            <use href="#icon-mail"></use>
+                        </svg><span>Email</span></a><a href="https://github.com/AlexandreBrown/" target="_blank"
+                        rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                            <use href="#icon-github"></use>
+                        </svg><span>GitHub</span></a><a href="https://x.com/AlexandreBrown0" target="_blank"
+                        rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                            <use href="#icon-x"></use>
+                        </svg><span>X</span></a><a href="https://www.linkedin.com/in/alexandrebrown/" target="_blank"
+                        rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                            <use href="#icon-linkedin"></use>
+                        </svg><span>LinkedIn</span></a><a href="https://www.youtube.com/@brownz_rl" target="_blank"
+                        rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                            <use href="#icon-youtube"></use>
+                        </svg><span>YouTube</span></a></div>
+            </div>
+            <figure class="hero-figure"><img class="hero-portrait" src="assets/images/portrait.webp" width="800"
+                    height="800" fetchpriority="high" alt="Portrait of Alexandre Brown">
+                <figcaption>PhD student at UdeM · Researcher at Mila</figcaption>
+            </figure>
+        </section>
+        <section class="news-section container section-rule" id="news" aria-labelledby="news-title">
+            <div class="section-label">
+                <h2 id="news-title">News</h2>
+            </div>
+            <div class="news-list">
+                <article class="news-item"><time datetime="2026">2026</time>
+                    <div>
+                        <h3><a href="publications.html#segdac">SegDAC accepted at RLC 2026</a></h3>
+                        <p>Published in Reinforcement Learning Journal, volume 7. Presented in a conference talk and
+                            poster session in Montréal.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="research-section container section-rule" aria-labelledby="research-title">
+            <div class="section-label">
+                <h2 id="research-title">Research</h2>
+            </div>
+            <div class="research-body">
+                <h3 class="research-lead">Learning from experience.<br>Transferring zero-shot.</h3>
+                <div class="research-text">
+                    <p>My goal is to build behavior foundation models that learn useful skills before a task is
+                        specified. I focus on large-scale unsupervised RL and zero-shot transfer for humanoid locomotion
+                        and manipulation, using RGB observations and minimal task-specific supervision.</p>
+                    <p>My work on SegDAC studied visual generalization in RL. I now want to scale the capabilities
+                        robots can learn through interaction, with methods that keep improving as compute and experience
+                        grow.</p>
+                </div>
+                <ul class="research-topics" aria-label="Research interests">
+                    <li>Unsupervised RL pretraining</li>
+                    <li>Zero-shot reinforcement learning</li>
+                    <li>Vision-based humanoid control</li>
+                </ul>
+            </div>
+        </section>
+        <section class="selected-work" aria-labelledby="selected-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="section-label">
+                        <h2 id="selected-title">Selected publication</h2>
+                    </div><a class="text-link" href="publications.html">All publications <svg class="icon"
+                            aria-hidden="true">
+                            <use href="#icon-arrow"></use>
+                        </svg></a>
+                </div>
+                <article class="featured-paper">
+                    <div class="paper-heading">
+                        <p class="eyebrow paper-venue">RLC 2026 <span aria-hidden="true">/</span> Reinforcement Learning
+                            Journal · Vol. 7</p>
+                        <h3><a href="https://segdac.github.io/">SegDAC: Visual Generalization in Reinforcement Learning
+                                via Dynamic Object Tokens</a></h3>
+                        <p class="authors"><strong>Alexandre Brown</strong>, <a href="https://neo-x.github.io/">Glen
+                                Berseth</a></p>
+                        <div class="paper-links"><a class="button button-dark" href="https://segdac.github.io/"
+                                target="_blank" rel="noopener noreferrer">Project
+                                page <svg class="icon" aria-hidden="true">
+                                    <use href="#icon-arrow"></use>
+                                </svg></a><a href="https://arxiv.org/abs/2508.09325" target="_blank"
+                                rel="noopener noreferrer">Paper <svg class="icon" aria-hidden="true">
+                                    <use href="#icon-arrow"></use>
+                                </svg></a><a href="https://github.com/SegDAC/SegDAC" target="_blank"
+                                rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                                    <use href="#icon-github"></use>
+                                </svg> Code</a><a href="publications.html#segdac-citation" target="_blank"
+                                rel="noopener noreferrer">BibTeX <svg class="icon" aria-hidden="true">
+                                    <use href="#icon-arrow"></use>
+                                </svg></a></div>
+                    </div>
+                    <div class="conference-grid">
+                        <figure class="poster-figure"><a class="photo-link" href="assets/images/segdac-poster.webp"
+                                data-lightbox data-caption="Poster session · RLC 2026, Montréal"
+                                aria-label="Enlarge photo: Alexandre Brown beside his SegDAC poster at RLC 2026"><img
+                                    src="assets/images/segdac-poster.webp"
+                                    srcset="assets/images/segdac-poster-640.webp 640w, assets/images/segdac-poster.webp 1800w"
+                                    sizes="(max-width: 760px) 92vw, 60vw" width="1800" height="1239" loading="lazy"
+                                    alt="Alexandre Brown beside his SegDAC poster at RLC 2026"><span class="expand-icon"
+                                    aria-hidden="true">↗</span></a>
+                            <figcaption>Poster session · RLC 2026, Montréal</figcaption>
+                        </figure>
+                        <figure class="talk-figure"><a class="photo-link" href="assets/images/segdac-talk.webp"
+                                data-lightbox data-caption="Conference talk · RLC 2026"
+                                aria-label="Enlarge photo: Alexandre presenting SegDAC to the conference audience"><img
+                                    src="assets/images/segdac-talk.webp"
+                                    srcset="assets/images/segdac-talk-640.webp 640w, assets/images/segdac-talk.webp 1440w"
+                                    sizes="(max-width: 760px) 92vw, 32vw" width="1440" height="1920" loading="lazy"
+                                    alt="Alexandre presenting SegDAC to the conference audience"><span
+                                    class="expand-icon" aria-hidden="true">↗</span></a>
+                            <figcaption>Conference talk · RLC 2026</figcaption>
+                        </figure>
+                    </div>
+                    <p class="conference-note">RLC 2026 · August 15-18, 2026 · <a
+                            href="https://maps.app.goo.gl/17q8MjLUsW4eya6a9" target="_blank"
+                            rel="noopener noreferrer">Université de Montréal, Montréal, QC</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="projects-section container" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <div class="section-label">
+                    <h2 id="projects-title">Projects & open source</h2>
+                </div><a class="text-link" href="https://github.com/AlexandreBrown/" target="_blank"
+                    rel="noopener noreferrer">More on GitHub <svg class="icon" aria-hidden="true">
+                        <use href="#icon-github"></use>
+                    </svg></a>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-visual project-video">
+                        <video autoplay muted playsinline controls preload="metadata" width="1000" height="500"
+                            src="assets/videos/reach_gt.mp4"
+                            data-video-playlist='["assets/videos/reach_gt.mp4", "assets/videos/kneel_gt.mp4", "assets/videos/walk_to_obj_gt.mp4"]'
+                            aria-label="VLM-GMT simulation examples on the Unitree G1">
+                            <a href="assets/videos/reach_gt.mp4">Watch the Unitree G1 simulation example</a>
+                        </video>
+                    </div>
+                    <div class="project-copy">
+                        <p class="eyebrow">Humanoid motion tracking</p>
+                        <h3><a href="https://github.com/AlexandreBrown/VLM-GMT" target="_blank"
+                                rel="noopener noreferrer">VLM-GMT</a></h3>
+                        <p>Exploring visual grounding and scene-aware kinematic constraints for G1 motion tracking with
+                            Kimodo. A pilot study of low level skills in simulation on the Unitree G1.</p>
+                        <div class="project-links"><a href="https://github.com/AlexandreBrown/VLM-GMT" target="_blank"
+                                rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                                    <use href="#icon-github"></use>
+                                </svg> Code</a><a href="assets/vlm-gmt-poster.pdf" target="_blank"
+                                rel="noopener noreferrer">Poster <svg class="icon" aria-hidden="true">
+                                    <use href="#icon-arrow"></use>
+                                </svg></a></div>
+                    </div>
+                </article>
+                <article class="project-card"><a class="project-visual playground-visual"
+                        href="https://github.com/AlexandreBrown/G1-Playground"><img
+                            src="assets/images/g1-playground.webp"
+                            srcset="assets/images/g1-playground-640.webp 640w, assets/images/g1-playground.webp 1600w"
+                            sizes="(max-width:760px) 92vw, 45vw" width="1600" height="1205" loading="lazy"
+                            alt="Unitree G1 humanoid in the Mila robotics lab"><span class="visual-caption">Real world humanoid deployment</span></a>
+                    <div class="project-copy">
+                        <p class="eyebrow">Sim-to-sim & sim-to-real</p>
+                        <h3><a href="https://github.com/AlexandreBrown/G1-Playground" target="_blank"
+                                rel="noopener noreferrer">G1 Playground</a></h3>
+                        <p>A lightweight starting point for low level control with the Unitree Python SDK and policy
+                            validation across MuJoCo, Isaac Lab, and real hardware.</p>
+                        <div class="project-links"><a href="https://github.com/AlexandreBrown/G1-Playground"
+                                target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                                    <use href="#icon-github"></use>
+                                </svg> Code</a></div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-visual project-video">
+                        <video autoplay loop muted playsinline controls preload="metadata" width="1920" height="1080"
+                            aria-label="EV charging assignment and scheduling with reinforcement learning">
+                            <source src="assets/videos/ev_charging_rl_example.mp4" type="video/mp4">
+                            <a href="assets/videos/ev_charging_rl_example.mp4">Watch the EV charging RL example</a>
+                        </video>
+                    </div>
+                    <div class="project-copy">
+                        <p class="eyebrow">Reinforcement learning</p>
+                        <h3><a href="https://github.com/INF8250AE/EV-charging-rl" target="_blank"
+                                rel="noopener noreferrer">EV charging with RL</a></h3>
+                        <p>Reinforcement learning models for electric vehicle charging assignment and scheduling.</p>
+                        <div class="project-links"><a href="https://github.com/INF8250AE/EV-charging-rl" target="_blank"
+                                rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                                    <use href="#icon-github"></use>
+                                </svg> Code</a></div>
+                    </div>
+                </article>
+                <article class="project-card"><a class="project-visual visual-contain"
+                        href="https://github.com/AlexandreBrown/WildfirePrediction" target="_blank"
+                        rel="noopener noreferrer"><img src="assets/images/project-wildfire.webp" width="1200"
+                            height="604" loading="lazy" alt="Wildfire risk prediction maps across Canada"></a>
+                    <div class="project-copy">
+                        <p class="eyebrow">Machine learning & remote sensing</p>
+                        <h3><a href="https://github.com/AlexandreBrown/WildfirePrediction" target="_blank"
+                                rel="noopener noreferrer">Canada wildfire
+                                prediction</a></h3>
+                        <p>An end-to-end pipeline built from scratch for wildfire forecasting across Canada, from
+                            automated geospatial data downloads at scale and preprocessing to deep learning model
+                            training and evaluation.</p>
+                        <div class="project-links"><a href="https://github.com/AlexandreBrown/WildfirePrediction"
+                                target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                                    <use href="#icon-github"></use>
+                                </svg> Code</a></div>
+                    </div>
+                </article>
+                <article class="project-card compact-project"><a class="project-visual visual-contain"
+                        href="https://github.com/AlexandreBrown/AerialSemanticSegmentation" target="_blank"
+                        rel="noopener noreferrer"><img src="assets/images/project-aerial.webp" width="1200" height="800"
+                            loading="lazy" alt="Aerial imagery and semantic segmentation outputs"></a>
+                    <div class="project-copy">
+                        <p class="eyebrow">Earlier work · Computer vision</p>
+                        <h3><a href="https://github.com/AlexandreBrown/AerialSemanticSegmentation" target="_blank"
+                                rel="noopener noreferrer">Aerial image
+                                segmentation</a></h3>
+                        <p>Deep learning for semantic segmentation of high-resolution aerial imagery.</p>
+                        <div class="project-links"><a
+                                href="https://github.com/AlexandreBrown/AerialSemanticSegmentation" target="_blank"
+                                rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                                    <use href="#icon-github"></use>
+                                </svg> Code</a></div>
+                    </div>
+                </article>
+                <article class="project-card compact-project"><a class="project-visual visual-contain"
+                        href="https://github.com/GIF-7005-Projet/cloud-cover-detection" target="_blank"
+                        rel="noopener noreferrer"><img src="assets/images/project-clouds.webp" width="921" height="446"
+                            loading="lazy" alt="Satellite imagery and predicted cloud and cloud-shadow masks"></a>
+                    <div class="project-copy">
+                        <p class="eyebrow">Earlier work · Computer vision</p>
+                        <h3><a href="https://github.com/GIF-7005-Projet/cloud-cover-detection" target="_blank"
+                                rel="noopener noreferrer">Cloud cover
+                                segmentation</a></h3>
+                        <p>Detecting clouds and cloud shadows in satellite images.</p>
+                        <div class="project-links"><a href="https://github.com/GIF-7005-Projet/cloud-cover-detection"
+                                target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                                    <use href="#icon-github"></use>
+                                </svg> Code</a></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="background-section container section-rule" aria-labelledby="background-title">
+            <div class="section-label">
+                <h2 id="background-title">Background</h2>
+            </div>
+            <p class="background-intro">Before my PhD, I worked in machine learning and software engineering, with
+                projects in computer vision and remote sensing.</p>
+            <div class="background-grid">
+                <div class="history">
+                    <h3 class="history-heading">Education</h3>
+                    <div class="history-row">
+                        <p class="history-date">2025–present</p>
+                        <div>
+                            <h4>PhD in Computer Science</h4>
+                            <p>Université de Montréal</p>
+                        </div>
+                    </div>
+                    <div class="history-row">
+                        <p class="history-date">2024–2025</p>
+                        <div>
+                            <h4>MSc in Computer Science</h4>
+                            <p>Université de Montréal</p>
+                        </div>
+                    </div>
+                    <div class="history-row">
+                        <p class="history-date">2021–2024</p>
+                        <div>
+                            <h4>BSc in Computer Science</h4>
+                            <p>Université Laval</p>
+                        </div>
+                    </div>
+                    <div class="history-row">
+                        <p class="history-date">2015–2019</p>
+                        <div>
+                            <h4>Technical DEC in Computer Science</h4>
+                            <p>Diploma of College Studies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history">
+                    <h3 class="history-heading">Experience</h3>
+                    <div class="history-row">
+                        <p class="history-date">Sep 2024–present</p>
+                        <div>
+                            <h4>Graduate Student Researcher</h4>
+                            <p>Mila</p>
+                        </div>
+                    </div>
+                    <div class="history-row">
+                        <p class="history-date">May–Sep 2024</p>
+                        <div>
+                            <h4>Data Scientist Intern</h4>
+                            <p>Intact</p>
+                        </div>
+                    </div>
+                    <div class="history-row">
+                        <p class="history-date">Nov 2023–May 2024</p>
+                        <div>
+                            <h4>Python Teaching Assistant</h4>
+                            <p>Université Laval</p>
+                        </div>
+                    </div>
+                    <div class="history-row">
+                        <p class="history-date">Aug 2021–Oct 2023</p>
+                        <div>
+                            <h4>Machine Learning Specialist</h4>
+                            <p>Microdrones</p>
+                        </div>
+                    </div>
+                    <div class="history-row">
+                        <p class="history-date">Jan 2019–Aug 2021</p>
+                        <div>
+                            <h4>Software Engineering</h4>
+                            <p>Microdrones</p>
+                        </div>
+                    </div>
+                    <div class="history-row">
+                        <p class="history-date">Aug 2018–Jan 2019</p>
+                        <div>
+                            <h4>Software Engineering</h4>
+                            <p>TELUS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lab-section container section-rule" aria-labelledby="lab-title">
+            <div class="section-heading">
+                <div class="section-label">
+                    <h2 id="lab-title">In the lab</h2>
+                </div>
+                <p class="section-note"></p>
+            </div>
+            <div class="lab-grid">
+                <figure class="seated-figure"><a class="photo-link" href="assets/images/g1-seated.webp" data-lightbox
+                        data-caption="Unitree G1 at Mila"
+                        aria-label="Enlarge photo: A seated Unitree G1 wearing a Mila shirt"><img
+                            src="assets/images/g1-seated.webp"
+                            srcset="assets/images/g1-seated-640.webp 640w, assets/images/g1-seated.webp 1440w"
+                            sizes="(max-width: 760px) 92vw, 32vw" width="1440" height="1913" loading="lazy"
+                            alt="A seated Unitree G1 wearing a Mila shirt"><span class="expand-icon"
+                            aria-hidden="true">↗</span></a>
+                    <figcaption>Unitree G1 at Mila</figcaption>
+                </figure>
+                <figure class=""><a class="photo-link" href="assets/images/g1-lab.webp" data-lightbox
+                        data-caption="Unitree G1 at the REAL lab"
+                        aria-label="Enlarge photo: Unitree G1 beside a red ball in the robotics lab"><img
+                            src="assets/images/g1-lab.webp"
+                            srcset="assets/images/g1-lab-640.webp 640w, assets/images/g1-lab.webp 1440w"
+                            sizes="(max-width: 760px) 92vw, 32vw" width="1440" height="1913" loading="lazy"
+                            alt="Unitree G1 beside a red ball in the robotics lab"><span class="expand-icon"
+                            aria-hidden="true">↗</span></a>
+                    <figcaption>Unitree G1 at the REAL lab</figcaption>
+                </figure>
+                <figure class=""><a class="photo-link" href="assets/images/franka.webp" data-lightbox
+                        data-caption="Franka Panda at the REAL lab"
+                        aria-label="Enlarge photo: Franka Panda above a tabletop manipulation setup"><img
+                            src="assets/images/franka.webp"
+                            srcset="assets/images/franka-640.webp 640w, assets/images/franka.webp 1440w"
+                            sizes="(max-width: 760px) 92vw, 32vw" width="1440" height="1913" loading="lazy"
+                            alt="Franka Panda above a tabletop manipulation setup"><span class="expand-icon"
+                            aria-hidden="true">↗</span></a>
+                    <figcaption>Franka arm at the REAL lab</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <p class="footer-name">Let's talk humanoids & RL.</p><a class="email-link"
+                    href="mailto:alexandre.brown@mila.quebec">alexandre.brown@mila.quebec <svg class="icon"
+                        aria-hidden="true">
+                        <use href="#icon-arrow"></use>
+                    </svg></a>
+            </div>
+            <div class="footer-right">
+                <div class="social-links" aria-label="Find me online"><a href="https://scholar.google.com/citations?hl=en&amp;user=fh0H9tIAAAAJ" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-scholar"></use></svg><span>Google Scholar</span></a><a href="https://orcid.org/0009-0006-4547-0390" target="_blank" rel="me noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-orcid"></use></svg><span>ORCID</span></a><a href="https://github.com/AlexandreBrown/"
+                        target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                            <use href="#icon-github"></use>
+                        </svg><span>GitHub</span></a><a href="https://x.com/AlexandreBrown0" target="_blank"
+                        rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                            <use href="#icon-x"></use>
+                        </svg><span>X</span></a><a href="https://www.linkedin.com/in/alexandrebrown/" target="_blank"
+                        rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                            <use href="#icon-linkedin"></use>
+                        </svg><span>LinkedIn</span></a><a href="https://www.youtube.com/@brownz_rl" target="_blank"
+                        rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                            <use href="#icon-youtube"></use>
+                        </svg><span>YouTube</span></a></div>
+                <p>Alexandre Brown · Montréal, Canada</p>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <section id="research">
-      <div class="section-title">
-        <h2>Research Interests</h2>
-      </div>
-      <p>
-        My research combines reinforcement learning, robotics and computer vision.  </br>
-        I aim to create learning systems that can operate in varied environments with minimal task-specific tuning.</br>  
-        Key areas include:
-      </p>
-      <ul>
-        <li>Artificial general intelligence and generalist robot policies</li>
-        <li>Visual generalization in online visual reinforcement learning</li>
-        <li>Using large pretrained vision models in RL pipelines</li>
-        <li>Efficient methods for real-world deployment</li>
-      </ul>
-    </section>
-
-    <section id="publications">
-      <div class="section-title">
-        <h2>Publications</h2>
-      </div>
-      <div class="paper">
-        <h3>SegDAC: Segmentation-Driven Actor-Critic for Visual Reinforcement Learning</h3>
-        <div class="meta">A. Brown, G. Berseth — 2025</div>
-        <p>
-          SegDAC integrates large vision models with online visual reinforcement learning to produce object-centric scene representations.
-            It improves visual generalization by up to twice compared to previous state-of-the-art online visual RL methods, without relying on human labels, data augmentation, or frame stacking.
-        </p>
-        <div class="badges">
-          <a class="badge" href="https://arxiv.org/abs/2508.09325" target="_blank">arXiv</a>
-          <a class="badge" href="https://segdac.github.io/" target="_blank">Project Page</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-  <div class="section-title">
-    <h2>Selected Projects</h2>
-  </div>
-  <div class="grid">
-
-    <!-- Wildfire Prediction -->
-    <div class="col-6 card">
-      <img src="images/wildfire_project.png" alt="Wildfire Prediction" style="width:100%; border-radius:8px; margin-bottom:10px;">
-      <h3>Canada Wildfire Prediction using Deep Learning</h3>
-      <p>
-        End-to-end system for large-scale wildfire forecasting across Canada at 250 m resolution.  
-        Handles the full pipeline from multi-source geospatial data collection and cleaning to model training and evaluation.  
-        Achieves strong test set performance, making it a practical tool for predicting future wildfire risk.
-      </p>
-      <div class="badges">
-        <a class="badge" href="https://github.com/AlexandreBrown/WildfirePrediction" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-
-    <!-- Aerial Semantic Segmentation -->
-    <div class="col-6 card">
-      <img src="images/aerial_semantic_seg_project.png" alt="Aerial Semantic Segmentation" style="width:100%; border-radius:8px; margin-bottom:10px;">
-      <h3>Aerial Semantic Segmentation</h3>
-      <p>
-        End-to-end deep learning pipeline for high-resolution segmentation of aerial imagery.  
-        Processes large-scale geospatial datasets, optimizes models for small-object detection, and delivers robust performance across diverse environments.  
-        Useful for mapping, infrastructure monitoring, and environmental analysis.
-      </p>
-      <div class="badges">
-        <a class="badge" href="https://github.com/AlexandreBrown/AerialSemanticSegmentation" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-
-    <!-- Cloud Cover Detection -->
-    <div class="col-6 card">
-      <img src="images/cloud_cover_result.png" alt="Cloud Cover Detection" style="width:100%; border-radius:8px; margin-bottom:10px;">
-      <h3>Cloud Cover Segmentation</h3>
-      <p>
-        Developed deep learning models for accurate detection of clouds and cloud shadows in satellite imagery.  
-        Includes full data preprocessing and model training pipeline to handle diverse atmospheric conditions.  
-        Enhances the quality of remote sensing datasets by removing noise, improving analysis for environmental and mapping applications.
-      </p>
-      <div class="badges">
-        <a class="badge" href="https://github.com/GIF-7005-Projet/cloud-cover-detection" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-
-</div>
-</section>
-
-    <section id="experience">
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <strong>Mila Quebec AI Institute</strong><br />
-          <span class="muted">PhD Student, Artificial Intelligence • 2025 to present</span>
-        </div>
-        <div class="timeline-item">
-          <strong>University of Montreal</strong><br />
-          <span class="muted">MSc in Artificial Intelligence • 2023 to 2025</span>
-        </div>
-        <div class="timeline-item">
-          <strong>Industry Machine Learning Roles</strong><br />
-          <span class="muted">2021 to 2023</span>
-        </div>
-        <div class="timeline-item">
-          <strong>Industry Software Engineer Roles</strong><br />
-          <span class="muted">2018 to 2021</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-      <p>Email: <a href="mailto:alexandre.brown@mila.quebec">alexandre.brown@mila.quebec</a></p>
-    </section>
-  </main>
+    </footer>
+    <dialog class="photo-dialog" aria-label="Photo viewer"><button class="dialog-close" type="button"
+            aria-label="Close photo viewer">Close <span aria-hidden="true">x</span></button>
+        <figure><img alt="">
+            <figcaption></figcaption>
+        </figure>
+    </dialog>
 </body>
+
 </html>
